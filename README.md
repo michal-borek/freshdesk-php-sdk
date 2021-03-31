@@ -1,11 +1,6 @@
 # Freshdesk PHP SDK API v2 
 
-[![Build Status](https://travis-ci.org/mpclarkson/freshdesk-php-sdk.svg?branch=master)](https://travis-ci.org/mpclarkson/freshdesk-php-sdk)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mpclarkson/freshdesk-php-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mpclarkson/freshdesk-php-sdk/?branch=master)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/5cb7004a-ac48-4fe2-88a4-79341e3c03d6.svg)](https://insight.sensiolabs.com/projects/5cb7004a-ac48-4fe2-88a4-79341e3c03d6)
-[![Packagist](https://img.shields.io/packagist/v/mpclarkson/freshdesk-php-sdk.svg)](https://packagist.org/packages/mpclarkson/freshdesk-php-sdk)
-
-This is a PHP 5.5+ SDK for the [Freshdesk](https://www.freshdesk.com) API v2.
+This is a PHP 7.2+ SDK for the [Freshdesk](https://www.freshdesk.com) API v2.
 
 If you have questions, please contact me or open an issue on GitHub.
 
@@ -31,19 +26,19 @@ $first = $all[0];
 
 ## Framework Integration
 
-- Symfony - [FreshdeskBundle](https://github.com/mpclarkson/freshdesk-bundle) 
-- Laravel/Lumen - [Freshdesk Larvel Service Provider](https://github.com/mpclarkson/freshdesk-laravel) .
+- Symfony - [FreshdeskBundle](https://github.com/michal-borek/freshdesk-bundle) 
+- Laravel/Lumen - [Freshdesk Larvel Service Provider](https://github.com/michal-borek/freshdesk-laravel) .
 
 ## Installation
 
 To integrate this library into your application, use [Composer](https://getcomposer.org).
 
-Add `mpclarkson/freshdesk-php-sdk` to your **composer.json** file:
+Add `michal-borek/freshdesk-php-sdk` to your **composer.json** file:
 
 ```json
 {
     "require": {
-        "mpclarkson/freshdesk-php-sdk": "dev-master"
+        "michal-borek/freshdesk-php-sdk": "dev-master"
     }
 }
 ```
@@ -147,9 +142,6 @@ filtering `GET` requests.
 
 ## Contributing
 
-This is a work in progress and PRs are welcome. Please read the 
-[contributing guide](.github/CONTRIBUTING.md).
-
 Nearly all api calls are available except for the `Solutions` and `Surveys`, 
 which Freshdesk has not yet implemented.
 
@@ -161,8 +153,9 @@ which Freshdesk has not yet implemented.
 
 ## Author
 
-The library was written and maintained by [Matthew Clarkson](http://mpclarkson.github.io/) 
-from [Hilenium](https://hilenium.com).
+The library was written [Matthew Clarkson](http://mpclarkson.github.io/)
+from [Hilenium](https://hilenium.com) then forked and adopted for Laravel 8.x
+by [Michał Borek](http://github.com/michal-borek) for [Wocozon](https://wocozon.nl).
 
 ## Reference
 
