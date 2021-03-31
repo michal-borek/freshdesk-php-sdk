@@ -10,6 +10,11 @@
             "name": "Matthew Clarkson",
             "email": "mpclarkson@hilenium.com",
             "homepage": "http://mpclarkson.github.io/"
+        },
+        {
+            "name": "Michał Borek",
+            "email": "michal.borek@fwrd.eu",
+            "homepage": "http://fwrd.eu/"
         }
     ],
     "require": {
