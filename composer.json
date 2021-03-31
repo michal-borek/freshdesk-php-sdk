@@ -5,6 +5,8 @@
     "homepage": "https://github.com/michal-borek/freshdesk-php-sdk",
     "keywords": ["freshdesk", "customer service", "support", "help desk", "api"],
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Matthew Clarkson",
