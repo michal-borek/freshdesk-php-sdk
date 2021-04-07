@@ -1,7 +1,5 @@
 API Index
-=========
-
-* Freshdesk
+=========* Freshdesk
     * [Api](Freshdesk-Api.md)
     * Freshdesk\Exceptions
         * [AccessDeniedException](Freshdesk-Exceptions-AccessDeniedException.md)

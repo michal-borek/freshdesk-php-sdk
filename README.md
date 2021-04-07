@@ -26,27 +26,16 @@ $first = $all[0];
 
 ## Framework Integration
 
-- Symfony - [FreshdeskBundle](https://github.com/michal-borek/freshdesk-bundle) 
-- Laravel/Lumen - [Freshdesk Larvel Service Provider](https://github.com/michal-borek/freshdesk-laravel) .
+- Laravel - [Freshdesk Larvel Service Provider](https://github.com/michal-borek/freshdesk-laravel)
 
 ## Installation
 
 To integrate this library into your application, use [Composer](https://getcomposer.org).
 
-Add `michal-borek/freshdesk-php-sdk` to your **composer.json** file:
+Then just run:
 
-```json
-{
-    "require": {
-        "michal-borek/freshdesk-php-sdk": "dev-master"
-    }
-}
-```
-
-Then run:
-
-```bash
-php composer.phar install
+```sh
+composer require michal-borek/freshdesk-php-sdk
 ```
 
 ## API Overview

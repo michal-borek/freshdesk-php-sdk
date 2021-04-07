@@ -1,205 +1,87 @@
 Freshdesk\Api
-===============
-
-Class for interacting with the Freshdesk Api
-
-This is the only class that should be instantiated directly. All API resources are available
+===============Class for interacting with the Freshdesk ApiThis is the only class that should be instantiated directly. All API resources are available
 via the relevant public properties
-
-
-* Class name: Api
-* Namespace: Freshdesk
-
-
-
-
-
-Properties
+* Class name:Api
+* Namespace:FreshdeskProperties
 ----------
-
-
-### $agents
-
-    public \Freshdesk\Resources\Agent $agents
-
-Agent resources
+###$agentspublic \Freshdesk\Resources\Agent $agentsAgent resources
 
 
 
 * Visibility: **public**
-
-
-### $companies
-
-    public \Freshdesk\Resources\Company $companies
-
-Company resources
+###$companiespublic \Freshdesk\Resources\Company $companiesCompany resources
 
 
 
 * Visibility: **public**
-
-
-### $contacts
-
-    public \Freshdesk\Resources\Contact $contacts
-
-Contact resources
+###$contactspublic \Freshdesk\Resources\Contact $contactsContact resources
 
 
 
 * Visibility: **public**
-
-
-### $groups
-
-    public \Freshdesk\Resources\Group $groups
-
-Group resources
+###$groupspublic \Freshdesk\Resources\Group $groupsGroup resources
 
 
 
 * Visibility: **public**
-
-
-### $tickets
-
-    public \Freshdesk\Resources\Ticket $tickets
-
-Ticket resources
+###$ticketspublic \Freshdesk\Resources\Ticket $ticketsTicket resources
 
 
 
 * Visibility: **public**
-
-
-### $timeEntries
-
-    public \Freshdesk\Resources\TimeEntry $timeEntries
-
-TimeEntry resources
+###$timeEntriespublic \Freshdesk\Resources\TimeEntry $timeEntriesTimeEntry resources
 
 
 
 * Visibility: **public**
-
-
-### $conversations
-
-    public \Freshdesk\Resources\Conversation $conversations
-
-Conversation resources
+###$conversationspublic \Freshdesk\Resources\Conversation $conversationsConversation resources
 
 
 
 * Visibility: **public**
-
-
-### $categories
-
-    public \Freshdesk\Resources\Category $categories
-
-Category resources
+###$categoriespublic \Freshdesk\Resources\Category $categoriesCategory resources
 
 
 
 * Visibility: **public**
-
-
-### $forums
-
-    public \Freshdesk\Resources\Forum $forums
-
-Forum resources
+###$forumspublic \Freshdesk\Resources\Forum $forumsForum resources
 
 
 
 * Visibility: **public**
-
-
-### $topics
-
-    public \Freshdesk\Resources\Topic $topics
-
-Topic resources
+###$topicspublic \Freshdesk\Resources\Topic $topicsTopic resources
 
 
 
 * Visibility: **public**
-
-
-### $comments
-
-    public \Freshdesk\Resources\Comment $comments
-
-Comment resources
+###$commentspublic \Freshdesk\Resources\Comment $commentsComment resources
 
 
 
 * Visibility: **public**
-
-
-### $emailConfigs
-
-    public \Freshdesk\Resources\EmailConfig $emailConfigs
-
-Email Config resources
+###$emailConfigspublic \Freshdesk\Resources\EmailConfig $emailConfigsEmail Config resources
 
 
 
 * Visibility: **public**
-
-
-### $products
-
-    public \Freshdesk\Resources\Product $products
-
-Access Product resources
+###$productspublic \Freshdesk\Resources\Product $productsAccess Product resources
 
 
 
 * Visibility: **public**
-
-
-### $businessHours
-
-    public \Freshdesk\Resources\BusinessHour $businessHours
-
-Business Hours resources
+###$businessHourspublic \Freshdesk\Resources\BusinessHour $businessHoursBusiness Hours resources
 
 
 
 * Visibility: **public**
-
-
-### $slaPolicies
-
-    public \Freshdesk\Resources\SLAPolicy $slaPolicies
-
-SLA Policy resources
+###$slaPoliciespublic \Freshdesk\Resources\SLAPolicy $slaPoliciesSLA Policy resources
 
 
 
-* Visibility: **public**
-
-
-Methods
+* Visibility: **public**Methods
 -------
-
-
-### __construct
-
-    mixed Freshdesk\Api::__construct(string $apiKey, string $domain)
-
-Constructs a new api instance
+###__constructmixed Freshdesk\Api::__construct(string $apiKey, string $domain)Constructs a new api instance
 
 
 
-* Visibility: **public**
-
-
-#### Arguments
-* $apiKey **string**
-* $domain **string**
-
-
+* Visibility: **public**#### Arguments*$apiKey **string***$domain **string**
