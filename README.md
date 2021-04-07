@@ -5,7 +5,7 @@ This is a PHP 7.2+ SDK for the [Freshdesk](https://www.freshdesk.com) API v2.
 If you have questions, please contact me or open an issue on GitHub.
 
 ## Quick Start
-```phpg
+```php
 require __DIR__ . '/vendor/autoload.php';
 use \Freshdesk\Api;
 
@@ -34,7 +34,7 @@ To integrate this library into your application, use [Composer](https://getcompo
 
 Then just run:
 
-```sh
+```shell
 composer require michal-borek/freshdesk-php-sdk
 ```
 
