@@ -27,6 +27,9 @@ use Freshdesk\Resources\Group;
 use Freshdesk\Resources\Product;
 use Freshdesk\Resources\SLAPolicy;
 use Freshdesk\Resources\Ticket;
+use Freshdesk\Resources\SolutionCategory;
+use Freshdesk\Resources\SolutionFolder;
+use Freshdesk\Resources\SolutionArticle;
 use Freshdesk\Resources\TimeEntry;
 use Freshdesk\Resources\Topic;
 use GuzzleHttp\Client;
@@ -124,6 +127,22 @@ class Api
     public $topics;
 
     /**
+     * Solution Categories resources
+     *
+     * @api
+     * @var SolutionCategory
+     */
+    public $solutioncategories;
+
+    /**
+     * Solution Categories resources
+     *
+     * @api
+     * @var SolutionCategoryFolders
+     */
+    public $solutioncategoriesfolders;
+
+    /**
      * Comment resources
      *
      * @api
@@ -176,6 +195,11 @@ class Api
      * @var string
      */
     private $baseUrl;
+
+
+
+     
+
 
     /**
      * Constructs a new api instance
@@ -328,6 +352,11 @@ class Api
         $this->tickets = new Ticket($this);
         $this->timeEntries = new TimeEntry($this);
         $this->conversations = new Conversation($this);
+
+        //Solutions Categories
+        $this->solutioncategories = new SolutionCategory($this);
+        $this->solutionfolders = new SolutionFolder($this);
+        $this->solutionarticles = new SolutionArticle($this);
 
         //Discussions
         $this->categories = new Category($this);
