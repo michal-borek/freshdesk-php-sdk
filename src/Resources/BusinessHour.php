@@ -29,4 +29,28 @@ class BusinessHour extends AbstractResource
      * @internal
      */
     protected $endpoint = '/business_hours';
+
+      /**
+     *
+     * List all Business Hours
+     *
+     * @api
+     * @return array|null
+     * @throws \Freshdesk\Exceptions\AccessDeniedException
+     * @throws \Freshdesk\Exceptions\ApiException
+     * @throws \Freshdesk\Exceptions\AuthenticationException
+     * @throws \Freshdesk\Exceptions\ConflictingStateException
+     * @throws \Freshdesk\Exceptions\NotFoundException
+     * @throws \Freshdesk\Exceptions\RateLimitExceededException
+     * @throws \Freshdesk\Exceptions\UnsupportedContentTypeException
+     * @throws \Freshdesk\Exceptions\MethodNotAllowedException
+     * @throws \Freshdesk\Exceptions\UnsupportedAcceptHeaderException
+     * @throws \Freshdesk\Exceptions\ValidationException
+     */
+    public function all()
+    {
+        return $this->api()->request('GET', $this->endpoint);
+    }
+
+
 }
