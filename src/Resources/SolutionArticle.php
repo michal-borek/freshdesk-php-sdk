@@ -87,6 +87,7 @@ class SolutionArticle extends AbstractResource
      *
      * @api
      * @param int $id
+     * @param array|null $query
      * @return array|null
      * @throws \Freshdesk\Exceptions\AccessDeniedException
      * @throws \Freshdesk\Exceptions\ApiException
@@ -99,8 +100,8 @@ class SolutionArticle extends AbstractResource
      * @throws \Freshdesk\Exceptions\UnsupportedAcceptHeaderException
      * @throws \Freshdesk\Exceptions\ValidationException
      */
-    public function all($id)
+    public function all($id, array $query = null)
     {
-        return $this->api()->request('GET', $this->articlesFoldersEndpoint($id . '/articles'));
+        return $this->api()->request('GET', $this->articlesFoldersEndpoint($id . '/articles', null, $query));
     }
 }

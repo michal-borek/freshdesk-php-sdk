@@ -1,6 +1,7 @@
 <?php
 
 namespace Freshdesk\Resources;
+
 use Freshdesk\Resources\Traits\AllTrait;
 use Freshdesk\Resources\Traits\CreateTrait;
 use Freshdesk\Resources\Traits\DeleteTrait;
@@ -21,7 +22,7 @@ class SolutionCategory extends AbstractResource
      */
     protected $categoriesEndpoint = '/solutions/categories';
 
-        /**
+    /**
      * Creates the folders endpoint
      *
      * @param string $id
@@ -33,11 +34,12 @@ class SolutionCategory extends AbstractResource
         return $id === null ? $this->categoriesEndpoint : $this->categoriesEndpoint . '/' . $id;
     }
 
-      /**
+    /**
      *
      * List all categories in solution
      *
      * @api
+     * @param array|null $query
      * @return array|null
      * @throws \Freshdesk\Exceptions\AccessDeniedException
      * @throws \Freshdesk\Exceptions\ApiException
@@ -50,12 +52,12 @@ class SolutionCategory extends AbstractResource
      * @throws \Freshdesk\Exceptions\UnsupportedAcceptHeaderException
      * @throws \Freshdesk\Exceptions\ValidationException
      */
-    public function all()
+    public function all(array $query = null)
     {
-        return $this->api()->request('GET', $this->categoriesEndpoint);
+        return $this->api()->request('GET', $this->categoriesEndpoint, null, $query);
     }
 
-     /**
+    /**
      *
      * Create a category for a solution
      *
@@ -98,12 +100,12 @@ class SolutionCategory extends AbstractResource
      * @throws \Freshdesk\Exceptions\UnsupportedAcceptHeaderException
      * @throws \Freshdesk\Exceptions\ValidationException
      */
-    public function update($id, array $query = null)
+    public function update($id, array $data)
     {
-        return $this->api()->request('PUT', $this->categoriesEndpoint($id), null, $query);
+        return $this->api()->request('PUT', $this->categoriesEndpoint($id), $data);
     }
 
-     /**
+    /**
      *
      * View a category of a solution
      *
@@ -125,5 +127,4 @@ class SolutionCategory extends AbstractResource
     {
         return $this->api()->request('GET', $this->categoriesEndpoint($id));
     }
-
 }

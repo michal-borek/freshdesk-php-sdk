@@ -1,8 +1,8 @@
 {
-    "name": "michal-borek/freshdesk-php-sdk",
-    "description": "PHP SDK for the Freshdesk API (v2)",
+    "name": "arjanderuyter/freshdesk-php-sdk",
+    "description": "PHP extended SDK for the Freshdesk API (v2)",
     "type": "library",
-    "homepage": "https://github.com/michal-borek/freshdesk-php-sdk",
+    "homepage": "https://github.com/arjanderuyter/freshdesk-php-sdk",
     "keywords": ["freshdesk", "customer service", "support", "help desk", "api"],
     "license": "MIT",
     "minimum-stability": "dev",
@@ -17,6 +17,11 @@
             "name": "Michał Borek",
             "email": "michal.borek@fwrd.eu",
             "homepage": "http://fwrd.eu/"
+        },
+        {
+            "name": "Arjan de Ruijter",
+            "email": "arjan.deruyter@gmail.com",
+            "homepage": "https://twitter.com/arjanderuijter"
         }
     ],
     "require": {

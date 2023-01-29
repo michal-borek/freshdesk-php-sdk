@@ -24,9 +24,6 @@ $first = $all[0];
 
 ```
 
-## Framework Integration
-
-- Laravel - [Freshdesk Larvel Service Provider](https://github.com/michal-borek/freshdesk-laravel)
 
 ## Installation
 
@@ -35,7 +32,7 @@ To integrate this library into your application, use [Composer](https://getcompo
 Then just run:
 
 ```shell
-composer require michal-borek/freshdesk-php-sdk
+composer require arjanderuyter/freshdesk-php-sdk
 ```
 
 ## API Overview
@@ -105,6 +102,20 @@ $hours = $api->businessHours->all();
 //SLA Policy
 $policies = $api->slaPolicies->all();
 
+//Solutions
+$categories = $api->solutioncategories->all();
+$categories = $api->solutioncategories->create($data);
+$categories = $api->solutioncategories->update($id, $data);
+$categories = $api->solutioncategories->view($id);
+
+$folders = $api->solutionfolders->all();
+$folders = $api->solutionfolders->create($data);
+$folders = $api->solutionfolders->view($id);
+
+$articles = $api->solutionarticles->all($id);
+$articles = $api->solutionarticles->create($data);
+
+
 ```
 
 ### Responses
@@ -131,7 +142,7 @@ filtering `GET` requests.
 
 ## Contributing
 
-Nearly all api calls are available except for the `Solutions` and `Surveys`, 
+Nearly all api calls are available except for the `Surveys`, 
 which Freshdesk has not yet implemented...
 
 ## Author
@@ -139,6 +150,7 @@ which Freshdesk has not yet implemented...
 The library was written [Matthew Clarkson](http://mpclarkson.github.io/)
 from [Hilenium](https://hilenium.com) then forked and adopted for Laravel 8.x
 by [Michał Borek](http://github.com/michal-borek) for [Wocozon](https://wocozon.nl).
+Solutions was done by [Arjan de Ruyter](https://github.com/ArjandeRuyter) because he needed it for (https://www.buroscanbrit.nl)
 
 ## Reference
 
