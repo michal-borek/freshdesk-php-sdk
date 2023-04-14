@@ -110,10 +110,13 @@ $categories = $api->solutioncategories->view($id);
 
 $folders = $api->solutionfolders->all();
 $folders = $api->solutionfolders->create($data);
+$folders = $api->solutionfolders->update($id, $data);
 $folders = $api->solutionfolders->view($id);
 
-$articles = $api->solutionarticles->all($id);
+$articles = $api->solutionarticles->all();
 $articles = $api->solutionarticles->create($data);
+$articles = $api->solutionarticles->update($id, $data);
+$articles = $api->solutionarticles->view($id);
 
 
 ```

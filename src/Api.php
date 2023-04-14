@@ -14,6 +14,7 @@ use Freshdesk\Exceptions\AuthenticationException;
 use Freshdesk\Exceptions\ConflictingStateException;
 use Freshdesk\Exceptions\RateLimitExceededException;
 use Freshdesk\Exceptions\UnsupportedContentTypeException;
+use Freshdesk\Exceptions\ValidationException;
 use Freshdesk\Resources\Agent;
 use Freshdesk\Resources\BusinessHour;
 use Freshdesk\Resources\Category;
@@ -314,7 +315,8 @@ class Api
                     return null;
             }
         } catch (RequestException $e) {
-            throw ApiException::create($e);
+            return $e->getMessage();
+            //throw ApiException::create($e);
         }
     }
 
