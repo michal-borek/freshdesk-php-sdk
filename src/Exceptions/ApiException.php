@@ -23,7 +23,7 @@ class ApiException extends Exception
     /**
      * @internal
      * @param RequestException $e
-     * @return AccessDeniedException|ApiException|AuthenticationException|ConflictingStateException|
+     * @return ValidationException|AccessDeniedException|ApiException|AuthenticationException|ConflictingStateException|
      * MethodNotAllowedException|NotFoundException|RateLimitExceededException|UnsupportedAcceptHeaderException|
      * UnsupportedContentTypeException|ValidationException
      */
